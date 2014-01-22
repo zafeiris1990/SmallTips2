@@ -14,7 +14,7 @@
     
     Class.forName("com.mysql.jdbc.Driver");
      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db?useUnicode=true&characterEncoding=UTF-8",
-            "root", "%za9261");
+            "root", "******");
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("select * from users where username='" + uname + "' and password='" + psswrd + "'");
